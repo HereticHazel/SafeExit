@@ -35,7 +35,7 @@ public class SafeExit : BaseUnityPlugin
         var OI = MachineConnector.GetRegisteredOI(PLUGIN_GUID);
         var config = OI.config;
 
-        safeExitSeconds = config.Bind("Seconds", 0, new ConfigurableInfo("Seconds until exiting counts as death, set to 0 to safely exit at any time", new ConfigAcceptableRange<int>(0, 800), autoTab: "Main"));
+        safeExitSeconds = config.Bind("Seconds", 0, new ConfigurableInfo("Seconds until exiting counts as a death, when 0 allows safely exiting at any time", new ConfigAcceptableRange<int>(0, 800), autoTab: "Main"));
 
         try {
             On.Menu.PauseMenu.Singal += Menu_PauseMenu_Singal_OnHook;

@@ -4,9 +4,9 @@
     "version": "1.0",
     "target_game_version": "v1.11.8",
     "authors": "HereticHazel",
-    "description": "Allows configuration of the grace period until exiting the game counts as a death",
+    "description": "Allows you to exit the game at any time without it counting as a death, or set a custom length for the grace period before it counts",
     "requirements": [],
     "requirements_names": [],
     "tags": ["Game Mechanics"],
-    "checksum_override_version": true
+    "checksum_override_version": false
 }
